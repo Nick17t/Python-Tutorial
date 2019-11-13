@@ -18,20 +18,20 @@
     "list":  [
       {
       "pagePath": "pages/index/index",
-      "iconPath": "image/index (2).png",
+      "iconPath": "image/index.png",
       "selectedIconPath": "image/index (1).png",
       "text": "首页"
       },
       {
         "pagePath": "pages/issue/issue",
-        "iconPath": "image/issue (2).png",
-        "selectedIconPath": "image/issue (1).png",
+        "iconPath": "image/editor.png",
+        "selectedIconPath": "image/editor (1).png",
         "text": "发布"
       },
       {
         "pagePath": "pages/my/my",
-        "iconPath": "image/my (2).png",
-        "selectedIconPath": "image/my (1).png",
+        "iconPath": "image/account.png",
+        "selectedIconPath": "image/account (1).png",
         "text": "我的"
       }
     ]
