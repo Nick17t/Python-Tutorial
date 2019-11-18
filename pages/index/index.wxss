@@ -19,3 +19,43 @@
 .usermotto {
   margin-top: 200px;
 }
+
+.Container {
+  display: flex;
+  padding: 20rpx;
+}
+
+.lost_img {
+  width: 128rpx;
+  height:  128rpx;
+}
+
+.lost_detail {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20rpx;
+}
+
+.lost_Name{
+  font-size:  32rpx;
+  color: #000;
+}
+
+.lost_label{
+  font-size:  28rpx;
+  color:  #000;
+  margin: 8rpx 0;
+}
+
+.lost_date{
+  font-size:  28rpx;
+  color:  #000;
+}
+
+.lost_position{
+  font-size: 32rpx;
+  color: #000;
+  font-weight: bold;
+  position:absolute; 
+  right:5%;
+}

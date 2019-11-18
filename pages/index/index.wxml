@@ -1,13 +1,12 @@
 <!--index.wxml-->
-<view class="container">
-  <view class="userinfo">
-    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
-    <block wx:else>
-      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
-      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
-    </block>
+<view class="Container">
+  <image class="lost_img" src="/image/umbrella.png"></image>
+  <view class="lost_detail">
+    <text class="lost_name">雨伞</text>
+    <text class="lost_label">分类：日用品</text>
+    <text class="lost_date">日期：2019.11.11</text>
+    <text class="lost_position">教学楼</text>
   </view>
-  <view class="usermotto">
-    <text class="user-motto">{{motto}}</text>
-  </view>
+
+
 </view>
