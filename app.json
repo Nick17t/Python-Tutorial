@@ -14,9 +14,9 @@
   "debug": true,
   "window": {
     "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "WeChat",
-    "navigationBarTextStyle": "black"
+    "navigationBarBackgroundColor": "#5C0D12",
+    "navigationBarTitleText": "SDJU失物招领平台",
+    "navigationBarTextStyle": "white"
   },
   "sitemapLocation": "sitemap.json",
   "tabBar": {
