@@ -43,13 +43,13 @@
 
 .lost_label{
   font-size:  28rpx;
-  color:  #000;
+  color: rgb(139, 139, 139);
   margin: 8rpx 0;
 }
 
 .lost_date{
   font-size:  28rpx;
-  color:  #000;
+  color:  rgb(139, 139, 139);
 }
 
 .lost_position{
@@ -71,6 +71,6 @@
 
 input{
   margin:10rpx;
-  border-radius:8px;
+  border-radius:100px;
   border:1px solid #c8cccf;
 }
