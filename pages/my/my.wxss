@@ -1,1 +1,36 @@
 /* pages/my/my.wxss */
+
+.header {
+  display: flex;
+  padding: 30rpx;
+  background-color: #5C0D12;
+}
+
+.head_img{
+  width: 128rpx;
+  height: 128rpx;
+}
+
+.user_detail{
+  float: right;
+  display: flex;
+  flex-direction: column;
+  margin-left: 20rpx;
+  padding: 7px;
+}
+
+.user_name{
+  color: white;
+}
+
+.user_num{
+  color: white;
+}
+
+.active{
+  
+}
+
+.found_active{
+
+}
