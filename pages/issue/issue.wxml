@@ -1,2 +1,14 @@
-<!--pages/issue/issue.wxml-->
-<text>pages/issue/issue.wxml</text>
+<form  bindsubmit="onSubmit" bindreset="">
+  <view class='bottom'>
+      <radio-group >
+        <radio>丢了东西</radio>
+        <radio>拾到东西</radio>
+      </radio-group>
+  </view>
+    <view class='row'>
+        <textarea  fixed="true" placeholder="物品描述："   />
+    </view>
+  <view>
+        <button formType="submit">发布</button>
+  </view>
+</form>
