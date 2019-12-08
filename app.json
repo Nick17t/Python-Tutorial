@@ -2,9 +2,10 @@
   "pages": [
     "pages/index/index",
     "pages/logs/logs",
-    "pages/my/my",
+    "pages/user/user",
     "pages/issue/issue",
-    "pages/detail/detail"
+    "pages/about/about",
+    "pages/contact/contact"
   ],
   "permission": {
     "scope.userLocation": {
