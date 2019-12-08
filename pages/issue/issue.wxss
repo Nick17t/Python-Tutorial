@@ -1,16 +1,53 @@
-radio-group{
-  margin: 50px
+.view1{
+  border-left: 40rpx solid transparent;
+  border-right: 40rpx solid transparent;
+  border-top:25rpx solid transparent;
+  border-bottom:0rpx solid transparent;
 }
-.row{
-    width: 90%;
-    height:100%;
-    margin: 5%;
-    
+
+.view2{
+  border-bottom: 3rpx solid #5C0D12;
 }
-.bottom{
-    width: 100%;
-    justify-content: space-around;
+
+.view3{
+  border-top: 45rpx solid transparent;
+  border-bottom: 20rpx solid transparent;
 }
+
+text{
+  border-left: 40rpx solid transparent;
+  border-bottom: 40rpx solid transparent;
+}
+
+input{
+  border-left:0rpx solid transparent;
+  border-top:0rpx solid transparent;
+  border-bottom:20rpx solid transparent;
+  border-right:20rpx solid transparent;
+}
+
+textarea{
+  border-left:20rpx solid transparent;
+  border-top:15rpx solid transparent;
+  border-bottom:10rpx solid transparent;
+  border-right:20rpx solid transparent;
+}
+
 button{
-  width:90%
+  width:50%;
+  color:white;
+  background-color: #5C0D12;
+}
+
+radio-group{
+  border-left: 40rpx solid transparent;
+  border-top:20rpx solid transparent;
+  border-bottom:0rpx solid transparent;
+}
+
+.wordwrap {
+  position: absolute;
+  color: rgb(189, 189, 189);
+  right: 50rpx;
+  bottom: -20rpx;
 }

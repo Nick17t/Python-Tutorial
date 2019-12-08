@@ -1,14 +1,41 @@
-<form  bindsubmit="onSubmit" bindreset="">
-  <view class='bottom'>
-      <radio-group >
-        <radio>丢了东西</radio>
-        <radio>拾到东西</radio>
-      </radio-group>
+<form bindsubmit="onSubmit" bindreset="">
+  <view class="view3">
+    <text>发布类型</text>
+    <radio-group>
+      <radio>丢了东西</radio>
+      <radio style="border-left:40rpx solid white;">拾到东西</radio>
+    </radio-group>
   </view>
-    <view class='row'>
-        <textarea  fixed="true" placeholder="物品描述："   />
+
+  <view class="view3">
+    <text>标题</text>
+    <view class="view1">
+      <view class="view2">
+        <input fixed="true" placeholder="请输入标题" />
+      </view>
     </view>
-  <view>
-        <button formType="submit">发布</button>
+  </view>
+
+  <view class="view3">
+    <text>地址</text>
+    <view class="view1">
+      <view class="view2">
+        <input fixed="true" placeholder="请输入丢失物品/捡到物品的位置" />
+      </view>
+    </view>
+  </view>
+
+  <view class="view3">
+    <text>物品描述</text>
+    <view class="view1">
+      <view style="border:3rpx solid #5C0D12;border-radius:5px;">
+        <textarea fixed="true" placeholder="请输入对丢失/捡到物品的详细描述" />
+        <span class="wordwrap">{{number}}/{{maxNumber}}</span>
+      </view>
+    </view>
+  </view>
+
+  <view class="view3">
+    <button formType="submit">发布</button>
   </view>
 </form>
