@@ -4,7 +4,7 @@ Page({
 
   data: {
     loadingHide: true,
-    loadingText: "拼命加载中..."
+    loadingText: "快马加鞭加载中"
   },
   callmeTap: function () {
     wx.makePhoneCall({

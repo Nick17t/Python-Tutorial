@@ -5,13 +5,18 @@
 </view>
 
 <view class="usermotto">
-  <navigator class="list_a" url="../ulist/ulist?openid={{openid}}">
+  <navigator class="list_a" url="../detail/detail">
+    <image class="icon" src='../../image/user_issue.png'></image>
     我的发布
   </navigator>
+
   <navigator class="list_b" url="../contact/contact">
+    <image class="icon" src='../../image/asscoiate.png'></image>
     联系我们
   </navigator>
+
   <navigator class="list_b" url="../about/about">
+    <image class="icon" src='../../image/aboutus.png'></image>
     关于我们
   </navigator>
 </view>
