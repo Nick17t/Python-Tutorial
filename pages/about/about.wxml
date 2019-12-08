@@ -1,0 +1,10 @@
+<loading hidden="{{loadingHide}}">
+  {{loadingText}}
+</loading>
+<!--pages/view/view.wxml-->
+<view class="viewNr">
+<text>
+  软件设计的小组作业
+</text>
+
+</view>
