@@ -1,14 +1,16 @@
 /* pages/user/user.wxss */
-page{
-  background: white
+
+page {
+  background: white;
 }
+
 .userinfo {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: white;
+  background: #5c0d12;
   width: 100%;
-  padding: 50rpx 0
+  padding: 50rpx 0;
 }
 
 .userinfo-avatar {
@@ -21,23 +23,22 @@ page{
 }
 
 .userinfo-nickname {
-  color: black;
+  color: white;
 }
 
 .usermotto {
   width: 90%;
-  background: #FFF;
-  border-bottom: 2rpx #F1F1F1 solid;
-  padding: 0 4%
+  background: #fff;
+  border-bottom: 2rpx #f1f1f1 solid;
+  padding: 0 5%;
 }
 
-.list_a{
-  width: 100%; 
-  padding: 30rpx 0
+.list_a {
+  width: 100%;
+  padding: 30rpx 0;
 }
 
-.list_b{
-  border-top: 2rpx #F1F1F1 solid; 
-  padding: 30rpx 0
+.list_b {
+  border-top: 2rpx #f1f1f1 solid;
+  padding: 30rpx 0;
 }
-
