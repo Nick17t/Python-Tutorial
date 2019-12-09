@@ -2,8 +2,8 @@
   <view class="view3">
     <text>发布类型</text>
     <radio-group>
-      <radio>丢了东西</radio>
-      <radio style="border-left:80rpx solid white;">拾到东西</radio>
+      <radio color="#5c0d12">丢了东西</radio>
+      <radio color="#5c0d12" style="border-left:80rpx solid white;">拾到东西</radio>
     </radio-group>
   </view>
 
