@@ -11,7 +11,7 @@
     <text>标题</text>
     <view class="view1">
       <view class="view2">
-        <input fixed="true" placeholder="请输入标题" />
+        <input placeholder="请输入标题" />
       </view>
     </view>
   </view>
@@ -20,7 +20,7 @@
     <text>地址</text>
     <view class="view1">
       <view class="view2">
-        <input fixed="true" placeholder="请输入丢失物品/捡到物品的位置" />
+        <input placeholder="请输入丢失物品/捡到物品的位置" />
       </view>
     </view>
   </view>
@@ -29,8 +29,8 @@
     <text>物品描述</text>
     <view class="view1">
       <view style="border:3rpx solid #5C0D12;border-radius:5px;">
-        <textarea fixed="true" placeholder="请输入对丢失/捡到物品的详细描述" />
-        <span class="wordwrap">{{number}}/{{maxNumber}}</span>
+        <textarea placeholder="请输入对丢失/捡到物品的详细描述" />
+        <text class="wordwrap">{{number}}/{{maxNumber}}</text>
       </view>
     </view>
   </view>

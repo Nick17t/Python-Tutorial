@@ -17,6 +17,7 @@
 text{
   border-left: 40rpx solid transparent;
   border-bottom: 40rpx solid transparent;
+  color: #5C0D12;
 }
 
 input{
@@ -46,8 +47,7 @@ radio-group{
 }
 
 .wordwrap {
-  position: absolute;
+  position: relative;
   color: rgb(189, 189, 189);
-  right: 50rpx;
-  bottom: -20rpx;
+  left: 76%;
 }
