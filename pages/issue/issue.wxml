@@ -3,7 +3,7 @@
     <text>发布类型</text>
     <radio-group>
       <radio>丢了东西</radio>
-      <radio style="border-left:40rpx solid white;">拾到东西</radio>
+      <radio style="border-left:80rpx solid white;">拾到东西</radio>
     </radio-group>
   </view>
 
@@ -29,7 +29,7 @@
     <text>物品描述</text>
     <view class="view1">
       <view style="border:3rpx solid #5C0D12;border-radius:5px;">
-        <textarea placeholder="请输入对丢失/捡到物品的详细描述" />
+        <textarea placeholder="请输入对丢失/捡到物品的详细描述"/>
         <text class="wordwrap">{{number}}/{{maxNumber}}</text>
       </view>
     </view>

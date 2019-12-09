@@ -5,7 +5,8 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    maxNumber: 500, //可输入最大字数
+    number: 0, //已输入字数
   },
 
   /**
@@ -62,11 +63,6 @@ Page({
    */
   onShareAppMessage: function() {
 
-  },
-
-  data: {
-    maxNumber: 500, //可输入最大字数
-    number: 0, //已输入字数
   },
 
   inputText: function(e) { //监听输入，实时改变已输入字数

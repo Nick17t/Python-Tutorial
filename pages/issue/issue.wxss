@@ -1,49 +1,50 @@
-.view1{
-  border-left: 40rpx solid transparent;
-  border-right: 40rpx solid transparent;
-  border-top:25rpx solid transparent;
-  border-bottom:0rpx solid transparent;
+.view1 {
+  margin-left: 40rpx;
+  margin-right: 40rpx;
+  margin-top: 25rpx;
+  margin-bottom: 0rpx;
 }
 
-.view2{
-  border-bottom: 3rpx solid #5C0D12;
+.view2 {
+  border-bottom: 3rpx solid #5c0d12;
 }
 
-.view3{
-  border-top: 45rpx solid transparent;
-  border-bottom: 20rpx solid transparent;
+.view3 {
+  margin-top: 45rpx;
+  margin-bottom: 20rpx;
 }
 
-text{
-  border-left: 40rpx solid transparent;
-  border-bottom: 40rpx solid transparent;
-  color: #5C0D12;
+text {
+  margin-left: 40rpx;
+  margin-bottom: 40rpx;
+  color: #5c0d12;
 }
 
-input{
-  border-left:0rpx solid transparent;
-  border-top:0rpx solid transparent;
-  border-bottom:20rpx solid transparent;
-  border-right:20rpx solid transparent;
+input {
+  margin-left: 0rpx;
+  margin-top: 0rpx;
+  margin-bottom: 20rpx;
+  margin-right: 20rpx;
 }
 
-textarea{
-  border-left:20rpx solid transparent;
-  border-top:15rpx solid transparent;
-  border-bottom:10rpx solid transparent;
-  border-right:20rpx solid transparent;
+textarea {
+  margin-left: 2%;
+  margin-top: 2%;
+  width: 96%;
+  overflow: auto;
+  word-break: break-all;
 }
 
-button{
-  width:50%;
-  color:white;
-  background-color: #5C0D12;
+button {
+  width: 50%;
+  color: white;
+  background-color: #5c0d12;
 }
 
-radio-group{
-  border-left: 40rpx solid transparent;
-  border-top:20rpx solid transparent;
-  border-bottom:0rpx solid transparent;
+radio-group {
+  margin-left: 40rpx;
+  margin-top: 20rpx;
+  margin-bottom: 0rpx;
 }
 
 .wordwrap {
