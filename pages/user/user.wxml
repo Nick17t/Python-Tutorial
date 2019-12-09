@@ -13,6 +13,11 @@
     我的发布
   </navigator>
 
+  <navigator class="list_b" url="../myInfo/myInfo">
+    <image class="icon" src='../../image/user_issue.png'></image>
+    我的信息
+  </navigator>
+
   <navigator class="list_b" url="../contact/contact">
     <image class="icon" src='../../image/asscoiate.png'></image>
     联系我们
