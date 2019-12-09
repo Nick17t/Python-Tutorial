@@ -1,1 +1,56 @@
 <!--pages/myInfo/myInfo.wxml-->
+<view style="margin-left:4%;margin-top:3%;margin-bottom:2%;background-color:#eee">
+  <label style="color:#5C0D12">个人基本信息</label>
+</view>
+
+<view>
+  <view class="userinfo">
+    <navigator class="list_a">
+      <label class="lb">姓名</label>
+      <label class="lb1">name</label>
+    </navigator>
+
+    <navigator class="list_b">
+      <label class="lb">学院</label>
+      <label class="lb1">dept</label>
+    </navigator>
+
+    <navigator class="list_b">
+      <label class="lb">班级</label>
+      <label class="lb1">class</label>
+    </navigator>
+
+    <navigator class="list_b">
+      <label class="lb">学号</label>
+      <label class="lb1">number</label>
+    </navigator>
+  </view>
+</view>
+
+<view style="margin-left:4%;margin-top:3%;margin-bottom:2%;background-color:#eee">
+  <label style="color:#5C0D12">联系方式</label>
+</view>
+
+<view>
+  <view class="userinfo">
+    <navigator class="list_a">
+      <label class="lb">Q Q</label>
+      <label class="lb1">QQ_NUMBER</label>
+    </navigator>
+
+    <navigator class="list_b">
+      <label class="lb">微信</label>
+      <label class="lb1">wechar</label>
+    </navigator>
+
+    <navigator class="list_b">
+      <label class="lb">手机</label>
+      <label class="lb1">phone number</label>
+    </navigator>
+
+    <navigator class="list_b">
+      <label class="lb">邮箱</label>
+      <label class="lb1">e-mail</label>
+    </navigator>
+  </view>
+</view>

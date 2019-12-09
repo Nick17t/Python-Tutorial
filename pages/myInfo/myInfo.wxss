@@ -1,1 +1,30 @@
 /* pages/myInfo/myInfo.wxss */
+
+page {
+  background-color: #eee;
+}
+
+view {
+  background-color: white;
+}
+
+.list_a {
+  width: 100%;
+  padding: 30rpx 0;
+}
+
+.list_b {
+  border-top: 2rpx #f1f1f1 solid;
+  padding: 30rpx 0;
+}
+
+.lb {
+  margin-left: 4%;
+  margin-right: 4%;
+}
+
+.lb1{
+  color: lightgray;
+  float:right;
+  margin-right: 4%;
+}
