@@ -5,7 +5,7 @@
 </view>
 
 <view class="usermotto">
-  <navigator class="list_a" url="../detail/detail">
+  <navigator class="list_a" url="../myIssue/myIssue">
     <image class="icon" src='../../image/user_issue.png'></image>
     我的发布
   </navigator>

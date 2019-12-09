@@ -6,7 +6,8 @@
     "pages/issue/issue",
     "pages/about/about",
     "pages/contact/contact",
-    "pages/detail/detail"
+    "pages/detail/detail",
+    "pages/myIssue/myIssue"
   ],
   "permission": {
     "scope.userLocation": {
