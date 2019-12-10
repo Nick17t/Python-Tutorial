@@ -24,7 +24,7 @@ view {
 }
 
 .lb1{
-  color: lightgray;
+  color: gray;
   float:right;
   margin-right: 4%;
 }
