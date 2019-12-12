@@ -1,4 +1,4 @@
-.view1 {
+/* .view1 {
   margin-left: 40rpx;
   margin-right: 40rpx;
   margin-top: 25rpx;
@@ -51,4 +51,43 @@ radio-group {
   position: relative;
   color: rgb(189, 189, 189);
   left: 76%;
+} */
+page {
+  background-color: #eee;
+}
+
+view {
+  background-color: white;
+}
+
+.list_a {
+  width: 100%;
+  padding: 30rpx 0;
+}
+
+.list_b {
+  border-top: 2rpx #f1f1f1 solid;
+  padding: 30rpx 0;
+}
+
+input {
+  margin-left: 4%;
+  margin-right: 4%;
+}
+
+textarea {
+  margin-left: 4%;
+  margin-right: 4%;
+}
+
+.view3 {
+  margin-top: 45rpx;
+  margin-bottom: 20rpx;
+  background-color: #eee;
+}
+
+button {
+  width: 50%;
+  color: white;
+  background-color: #5c0d12;
 }

@@ -1,5 +1,5 @@
 <form bindsubmit="onSubmit" bindreset="">
-  <view class="view3">
+  <!-- <view class="view3">
     <text>发布类型</text>
     <radio-group>
       <radio color="#5c0d12">丢了东西</radio>
@@ -37,5 +37,43 @@
 
   <view class="view3">
     <button formType="submit">发布</button>
+  </view> -->
+  <view style="margin-left:4%;margin-top:3%;margin-bottom:2%;background-color:#eee">
+    <label style="color:#5C0D12">标题</label>
   </view>
+
+  <view class="list_a">
+    <input type="text" placeholder="请输入标题，应包含关键词" />
+  </view>
+
+  <view style="margin-left:4%;margin-top:3%;margin-bottom:2%;background-color:#eee">
+    <label style="color:#5C0D12">地址</label>
+  </view>
+
+  <view class="list_a">
+    <input type="text" placeholder="请输入丢失物品/捡到物品的地址" />
+  </view>
+
+  <view style="margin-left:4%;margin-top:3%;margin-bottom:2%;background-color:#eee">
+    <label style="color:#5C0D12">物品描述</label>
+  </view>
+
+  <view class="list_a">
+    <textarea placeholder="请输入对丢失物品/捡到物品的详细描述" />
+  </view>
+
+  <view style="margin-left:4%;margin-top:3%;margin-bottom:2%;background-color:#eee">
+    <label style="color:#5C0D12">联系方式</label>
+  </view>
+
+  <view class="list_a">
+    <picker-view></picker-view>
+  </view>
+
+
+  <view class="view3">
+    <button formType="submit">发布</button>
+  </view>
+
+
 </form>
