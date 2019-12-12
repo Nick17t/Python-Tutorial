@@ -7,6 +7,9 @@ Page({
   data: {
     maxNumber: 500, //可输入最大字数
     number: 0, //已输入字数
+
+    selectorItems: ['QQ', '微信', '手机', '邮箱', '不留联系方式'],
+    pickerIndex:1
   },
 
   /**
@@ -71,5 +74,11 @@ Page({
     this.setData({
       'number': len
     })
+  },
+
+  selectorChange: function(e){
+    pickerIndex=e.detail.value;
+    let value = this.data.selectorItems[pickerIndex];
+    this.setData({selector:value});
   }
 })
