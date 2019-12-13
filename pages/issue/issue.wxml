@@ -38,6 +38,18 @@
   <view class="view3">
     <button formType="submit">发布</button>
   </view> -->
+
+  <view style="margin-left:4%;margin-top:3%;margin-bottom:2%;background-color:#eee">
+    <label style="color:#5C0D12">发布类型</label>
+  </view>
+
+  <view>
+    <radio-group>
+      <radio color="#5c0d12">丢了东西</radio>
+      <radio color="#5c0d12" style="border-left:80rpx solid #eee;">拾到东西</radio>
+    </radio-group>
+  </view>
+
   <view style="margin-left:4%;margin-top:3%;margin-bottom:2%;background-color:#eee">
     <label style="color:#5C0D12">标题</label>
   </view>
@@ -59,7 +71,7 @@
   </view>
 
   <view class="list_a">
-    <textarea bindblur="getText" bindinput="getValueLength" show-confirm-bar='true' value="{{editText}}" bindconfirm="getText"  maxlength="{{maxNumber}}" auto-focus placeholder="请输入对丢失物品/捡到物品的详细描述" />
+    <textarea bindblur="getText" bindinput="getValueLength" show-confirm-bar='true' value="{{editText}}" bindconfirm="getText" maxlength="{{maxNumber}}" auto-focus placeholder="请输入对丢失物品/捡到物品的详细描述" />
     <text class="wordwrap">{{currentWordNumber|0}}/{{maxNumber}}</text>
   </view>
 
@@ -69,13 +81,14 @@
 
   <view class="list_a">
     <picker mode="selector" data-value="pickerIndex" range="{{selectorItems}}" bindchange="selectorChange" place>
-      <text style="margin-left:4%">{{selectorItems[pickerIndex]}}</text></picker>
+      <text style="margin-left:4%">{{selectorItems[pickerIndex]}}</text>
+    </picker>
   </view>
   <label style="margin-left:4%;color:gray;font-size:70%">对于放在拾获地点的物品，可以不留联系方式</label>
 
   <view class="view3">
     <button formType="submit">发布</button>
   </view>
-  
+
 
 </form>
