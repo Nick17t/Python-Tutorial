@@ -9,7 +9,7 @@ Page({
     number: 0, //已输入字数
 
     selectorItems: ['QQ', '微信', '手机', '邮箱', '不留联系方式'],
-    pickerIndex:1
+    pickerIndex: 0
   },
 
   /**
@@ -76,9 +76,11 @@ Page({
     })
   },
 
-  selectorChange: function(e){
-    pickerIndex=e.detail.value;
-    let value = this.data.selectorItems[pickerIndex];
-    this.setData({selector:value});
+  selectorChange: function(e) {
+    var that = this
+    let index = e.currentTarget.dataset.value
+    that.setData({//点击后更新数据
+      [index]: e.detail.value
+    });
   }
 })

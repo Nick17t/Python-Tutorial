@@ -67,11 +67,9 @@
   </view>
 
   <view class="list_a">
-    <picker mode="selector" range="{{selectorItems}}" bindchange="selectorChange" place>
-      <view>{{selector}}</view>
-    </picker>
+    <picker mode="selector" data-value="pickerIndex" range="{{selectorItems}}" bindchange="selectorChange" place>
+      <text style="margin-left:4%">{{selectorItems[pickerIndex]}}</text></picker>
   </view>
-
 
   <view class="view3">
     <button formType="submit">发布</button>
