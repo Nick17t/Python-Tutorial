@@ -59,7 +59,8 @@
   </view>
 
   <view class="list_a">
-    <textarea placeholder="请输入对丢失物品/捡到物品的详细描述" />
+    <textarea bindblur="getText" bindinput="getValueLength" show-confirm-bar='true' value="{{editText}}" bindconfirm="getText"  maxlength="{{maxNumber}}" auto-focus placeholder="请输入对丢失物品/捡到物品的详细描述" />
+    <text class="wordwrap">{{currentWordNumber|0}}/{{maxNumber}}</text>
   </view>
 
   <view style="margin-left:4%;margin-top:3%;margin-bottom:2%;background-color:#eee">

@@ -78,6 +78,9 @@ input {
 textarea {
   margin-left: 4%;
   margin-right: 4%;
+  width: 94%;
+  overflow: auto;
+  word-break: break-all;
 }
 
 .view3 {
@@ -90,4 +93,10 @@ button {
   width: 50%;
   color: white;
   background-color: #5c0d12;
+}
+
+.wordwrap {
+  position: relative;
+  color: rgb(189, 189, 189);
+  left: 83%;
 }
