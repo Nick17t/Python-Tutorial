@@ -54,6 +54,7 @@ radio-group {
 } */
 page {
   background-color: #eee;
+  font-size: 35rpx;
 }
 
 view {

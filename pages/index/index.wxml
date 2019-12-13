@@ -1,6 +1,65 @@
 <!--index.wxml-->
-<include src="../../wxSearchView/wxSearchView.wxml" />
-<view class="Container">
+<view style="position:fixed; top:0;width:100%;">
+  <include src="../../wxSearchView/wxSearchView.wxml" />
+</view>
+<view style="padding:20px"></view>
+<block wx:for="{{list}}">
+  <view class="table">
+    <view style="margin-left:2%;margin-right:2%;margin-top:1%">
+      <view class="tr">
+        <view class="userAvartar">
+          <image class="userinfo-avatar" src="{{item.useravatar}}" background-size="cover" />
+        </view>
+        <view class="userInfo">
+          <text class="userinfo-nickname">{{item.username}}</text>
+        </view>
+        <view class="issueType">
+          {{item.issueType}}
+        </view>
+      </view>
+      <view class="detail">
+        <view class="photo">
+          <image mode="widthFix" class="detailphoto" src="{{item.photos}}"/>
+        </view>
+        <view class="description">
+          <view class="description-label-view">
+            {{item.title}}
+          </view>
+          <view class="description-text-view">
+            <text class="description-text">{{item.text}}</text>
+          </view>
+        </view>
+      </view>
+      <view class="tr">
+        <view class="position">
+          <image src="../../image/map.png" class="mapIco" mode="widthFix" /> {{item.position}}
+        </view>
+        <view class="issueTime">
+
+          {{item.issuedate}}
+        </view>
+      </view>
+    </view>
+  </view>
+</block>
+
+
+<!-- <view>
+  <view>
+    <view class="userInfo">
+      <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover" />
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </view>
+    <text class="issue-time">2019-12-20</text>
+  </view>
+  <view class="detail">
+  </view>
+  <view class="position">
+  </view>
+</view> -->
+
+
+<!-- <view class="Container">
   <image class="lost_img" src="/image/umbrella.png"></image>
   <view class="lost_detail">
     <text class="lost_name">雨伞</text>
@@ -8,4 +67,4 @@
     <text class="lost_date">日期：2019.11.11</text>
     <text class="lost_position">教学楼</text>
   </view>
-</view>
+</view> -->
