@@ -35,7 +35,6 @@
           <image src="../../image/map.png" class="mapIco" mode="widthFix" /> {{item.position}}
         </view>
         <view class="issueTime">
-
           {{item.issuedate}}
         </view>
       </view>

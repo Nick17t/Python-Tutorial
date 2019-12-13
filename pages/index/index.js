@@ -46,6 +46,16 @@ Page({
         "text": "丢了一本《C++ Primier》，可能是在A教",
         "position": "A教或其他地方",
         "issuedate": "2019-11-30"
+      },
+      {
+        "useravatar": "../../image/testinfo/testavatar/2.jpg",
+        "username": "zs",
+        "issueType": "丢失物品",
+        "photos": "../../image/testinfo/testphoto/nophoto.png",
+        "title": "丢失校园卡",
+        "text": "在操场丢失学号171003530214的校园卡，捡到请联系",
+        "position": "操场",
+        "issuedate": "2019-11-30"
       }
     ],
     userInfo: {},
