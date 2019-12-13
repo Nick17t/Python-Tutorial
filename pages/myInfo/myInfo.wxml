@@ -7,22 +7,22 @@
   <view class="userinfo">
     <navigator class="list_a">
       <label class="lb">姓名</label>
-      <label class="lb1">name</label>
+      <label class="lb1">{{name}}</label>
     </navigator>
 
     <navigator class="list_b">
       <label class="lb">学院</label>
-      <label class="lb1">dept</label>
+      <label class="lb1">{{dept}}</label>
     </navigator>
 
     <navigator class="list_b">
       <label class="lb">班级</label>
-      <label class="lb1">class</label>
+      <label class="lb1">{{classes}}</label>
     </navigator>
 
     <navigator class="list_b">
       <label class="lb">学号</label>
-      <label class="lb1">number</label>
+      <label class="lb1">{{sno}}</label>
     </navigator>
   </view>
 </view>
@@ -35,22 +35,22 @@
   <view class="userinfo">
     <navigator class="list_a">
       <label class="lb">Q Q</label>
-      <label class="lb1">QQ_NUMBER</label>
+      <label class="lb1">{{QQ_number}}</label>
     </navigator>
 
     <navigator class="list_b">
       <label class="lb">微信</label>
-      <label class="lb1">wechat</label>
+      <label class="lb1">{{wechat}}</label>
     </navigator>
 
     <navigator class="list_b">
       <label class="lb">手机</label>
-      <label class="lb1">phone number</label>
+      <label class="lb1">{{phone_number}}</label>
     </navigator>
 
     <navigator class="list_b">
       <label class="lb">邮箱</label>
-      <label class="lb1">e-mail</label>
+      <label class="lb1">{{email}}</label>
     </navigator>
   </view>
 </view>

@@ -156,20 +156,20 @@ Page({
     this.orderShow()
   },
 
-  orderShow: function() {
-    let that = this
-    switch (this.data.currtab) {
-      case 0:
-        that.alreadyShow()
-        break
-      case 1:
-        that.waitPayShow()
-        break
-      case 2:
-        that.lostShow()
-        break
-    }
-  }
+  // orderShow: function() {
+  //   let that = this
+  //   switch (this.data.currtab) {
+  //     case 0:
+  //       that.alreadyShow()
+  //       break
+  //     case 1:
+  //       that.waitPayShow()
+  //       break
+  //     case 2:
+  //       that.lostShow()
+  //       break
+  //   }
+  // }
   // alreadyShow: function() {
   //   this.setData({
   //     alreadyOrder: [{
