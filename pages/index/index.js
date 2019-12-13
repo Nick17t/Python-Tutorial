@@ -8,6 +8,7 @@ const app = getApp()
 Page({
   data: {
     list: [{
+        "id":"0",
         "useravatar": "../../image/testinfo/testavatar/1.jpg",
         "username": "zcz",
         "issueType": "丢失物品",
@@ -15,9 +16,11 @@ Page({
         "title": "丢失钥匙一串",
         "text": "在一食堂附近丢失一串如图所示的钥匙，请捡到的同学联系我",
         "position": "一食堂",
-        "issuedate": "2019-12-03"
+        "issuedate": "2019-12-03",
+        "detailurl":"../detail/detail?id=0"
       },
       {
+        "id": "1",
         "useravatar": "../../image/testinfo/testavatar/2.jpg",
         "username": "zs",
         "issueType": "捡到物品",
@@ -25,9 +28,11 @@ Page({
         "title": "捡到校园卡",
         "text": "在信息楼313捡到学号171003530112的校园卡，放在讲台上",
         "position": "信息楼313",
-        "issuedate": "2019-12-02"
+        "issuedate": "2019-12-02",
+        "detailurl": "../detail/detail?id=1"
       },
       {
+        "id": "2",
         "useravatar": "../../image/testinfo/testavatar/3.jpg",
         "username": "zzc",
         "issueType": "捡到物品",
@@ -35,9 +40,11 @@ Page({
         "title": "捡到U盘",
         "text": "在25宿1楼捡到1个U盘，放在门口桌子上了",
         "position": "25-26宿",
-        "issuedate": "2019-12-01"
+        "issuedate": "2019-12-01",
+        "detailurl": "../detail/detail?id=2"
       },
       {
+        "id": "3",
         "useravatar": "../../image/testinfo/testavatar/4.jpg",
         "username": "sz",
         "issueType": "丢失物品",
@@ -45,9 +52,11 @@ Page({
         "title": "丢了一本书",
         "text": "丢了一本《C++ Primier》，可能是在A教",
         "position": "A教或其他地方",
-        "issuedate": "2019-11-30"
+        "issuedate": "2019-11-30",
+        "detailurl": "../detail/detail?id=3"
       },
       {
+        "id": "4",
         "useravatar": "../../image/testinfo/testavatar/2.jpg",
         "username": "zs",
         "issueType": "丢失物品",
@@ -55,7 +64,8 @@ Page({
         "title": "丢失校园卡",
         "text": "在操场丢失学号171003530214的校园卡，捡到请联系",
         "position": "操场",
-        "issuedate": "2019-11-30"
+        "issuedate": "2019-11-30",
+        "detailurl": "../detail/detail?id=4"
       }
     ],
     userInfo: {},

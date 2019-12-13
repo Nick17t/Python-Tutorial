@@ -17,7 +17,7 @@
           {{item.issueType}}
         </view>
       </view>
-      <view class="detail">
+      <navigator class="detail" hover-class="none" url="{{item.detailurl}}">
         <view class="photo">
           <image mode="widthFix" class="detailphoto" src="{{item.photos}}"/>
         </view>
@@ -29,7 +29,7 @@
             <text class="description-text">{{item.text}}</text>
           </view>
         </view>
-      </view>
+      </navigator>
       <view class="tr">
         <view class="position">
           <image src="../../image/map.png" class="mapIco" mode="widthFix" /> {{item.position}}
