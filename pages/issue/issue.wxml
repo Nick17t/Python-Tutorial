@@ -1,4 +1,4 @@
-<form bindsubmit="onSubmit" bindreset="">
+<form bindsubmit="formSubmit">
   <!-- <view class="view3">
     <text>发布类型</text>
     <radio-group>
@@ -44,9 +44,9 @@
   </view>
 
   <view>
-    <radio-group>
-      <radio color="#5c0d12">丢了东西</radio>
-      <radio color="#5c0d12" style="border-left:80rpx solid #eee;">拾到东西</radio>
+    <radio-group name="issueType">
+      <radio color="#5c0d12" value="0">丢失物品</radio>
+      <radio color="#5c0d12" value="1" checked="true" style="border-left:80rpx solid #eee;">捡到物品</radio>
     </radio-group>
   </view>
 
@@ -55,7 +55,7 @@
   </view>
 
   <view class="list_a">
-    <input type="text" placeholder="请输入标题，应包含关键词" />
+    <input name="title" type="text" value="{{title}}" placeholder="请输入标题，应包含关键词" />
   </view>
 
   <view style="margin-left:4%;margin-top:3%;margin-bottom:2%;background-color:#eee">
@@ -63,7 +63,7 @@
   </view>
 
   <view class="list_a">
-    <input type="text" placeholder="请输入丢失物品/捡到物品的地点" />
+    <input name="position" type="text" value="{{position}}" placeholder="请输入丢失物品/捡到物品的地点" />
   </view>
 
   <view style="margin-left:4%;margin-top:3%;margin-bottom:2%;background-color:#eee">
@@ -71,7 +71,7 @@
   </view>
 
   <view class="list_a">
-    <textarea bindblur="getText" bindinput="getValueLength" show-confirm-bar='true' value="{{editText}}" bindconfirm="getText" maxlength="{{maxNumber}}" auto-focus placeholder="请输入对丢失物品/捡到物品的详细描述" />
+    <textarea name="text" bindinput="getValueLength" show-confirm-bar='true' value="{{text}}" bindconfirm="getText" maxlength="{{maxNumber}}" auto-focus placeholder="请输入对丢失物品/捡到物品的详细描述" />
     <text class="wordwrap">{{currentWordNumber|0}}/{{maxNumber}}</text>
   </view>
 
@@ -87,8 +87,7 @@
   <label style="margin-left:4%;color:gray;font-size:70%">对于放在拾获地点的物品，可以不留联系方式</label>
 
   <view class="view3">
-    <button formType="submit">发布</button>
+    <button form-type="submit">发布</button>
   </view>
-
 
 </form>
