@@ -1,4 +1,5 @@
 // pages/issue/issue.js
+
 Page({
 
   /**
@@ -100,7 +101,8 @@ Page({
         issueType:e.detail.value.issueType,
         title:e.detail.value.title,
         position:e.detail.value.position,
-        text:e.detail.value.text
+        text:e.detail.value.text,
+        sno: getApp().globalData.sno
       },
       header: {
         //'content-type': 'application/json' // 默认值

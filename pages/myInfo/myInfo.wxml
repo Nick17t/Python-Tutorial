@@ -22,7 +22,7 @@
 
     <navigator class="list_b">
       <label class="lb">学号</label>
-      <label class="lb1">{{sno}}</label>
+      <label class="lb1" name="sno">{{sno}}</label>
     </navigator>
   </view>
 </view>

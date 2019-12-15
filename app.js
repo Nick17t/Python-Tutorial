@@ -26,6 +26,7 @@ App({
   },
 
   globalData: {
-    userInfo: null
+    userInfo: null,
+    sno:"171003530214"
   }
 })
