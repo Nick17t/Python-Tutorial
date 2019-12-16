@@ -27,6 +27,7 @@ App({
 
   globalData: {
     userInfo: null,
-    sno:"171003530214"
+    sno:"171003530214",
+    imagesrc:""
   }
 })

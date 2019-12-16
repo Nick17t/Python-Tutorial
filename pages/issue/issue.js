@@ -1,16 +1,14 @@
 // pages/issue/issue.js
-
 Page({
-
   /**
    * 页面的初始数据
    */
   data: {
     maxNumber: 500, //可输入最大字数
     currentWordNumber: 0, //已输入字数
-
     selectorItems: ['QQ', '微信', '手机', '邮箱', '不留联系方式'],
-    pickerIndex: 0
+    pickerIndex: 0,
+    imagesrc:""
   },
 
   /**
@@ -102,7 +100,8 @@ Page({
         title: e.detail.value.title,
         position: e.detail.value.position,
         text: e.detail.value.text,
-        sno: getApp().globalData.sno
+        sno: getApp().globalData.sno,
+        photoAddress: getApp().globalData.imagesrc
       },
       header: {
         //'content-type': 'application/json' // 默认值
@@ -131,53 +130,49 @@ Page({
       sourceType: ['album', 'camera'],
       success: function(res) {
         var tempFilePaths = res.tempFilePaths
-        upload(that, tempFilePaths);
+        console.log(tempFilePaths)
+        wx.uploadFile({
+          url: "http://localhost:8080/thelostfound_war_exploded/image-upload",
+          filePath: tempFilePaths[0],
+          name: 'file',
+          header: {
+            "Content-Type": "multipart/form-data"
+          },
+          formData: {
+            //和服务器约定的token, 一般也可以放在header中
+            'session_token': wx.getStorageSync('session_token')
+          },
+          success: function(res) {
+            console.log(res.data)
+            var data = res.data
+            getApp().globalData.imagesrc=res.data
+            console.log(getApp().globalData.imagesrc)
+            that.setData({ //上传成功修改显示头像
+              // imagesrc:res.data
+              // src: tempFilePaths[0],
+            })
+          },
+          fail: function(e) {
+            console.log(e);
+            wx.showModal({
+              title: '提示',
+              content: '上传失败',
+              showCancel: false
+            })
+          },
+          complete: function() {
+            wx.hideToast(); //隐藏Toast
+          }
+        })
       }
     })
   },
 })
 
-function upload(page, path) {
-  wx.showToast({
-      icon: "loading",
-      title: "正在上传"
-    }),
-    wx.uploadFile({
-      url: constant.SERVER_URL + "/FileUploadServlet",
-      filePath: path[0],
-      name: 'file',
-      header: {
-        "Content-Type": "multipart/form-data"
-      },
-      formData: {
-        //和服务器约定的token, 一般也可以放在header中
-        'session_token': wx.getStorageSync('session_token')
-      },
-      success: function(res) {
-        console.log(res);
-        if (res.statusCode != 200) {
-          wx.showModal({
-            title: '提示',
-            content: '上传失败',
-            showCancel: false
-          })
-          return;
-        }
-        var data = res.data
-        page.setData({ //上传成功修改显示头像
-          src: path[0]
-        })
-      },
-      fail: function(e) {
-        console.log(e);
-        wx.showModal({
-          title: '提示',
-          content: '上传失败',
-          showCancel: false
-        })
-      },
-      complete: function() {
-        wx.hideToast(); //隐藏Toast
-      }
-    })
-}
+// function upload(page, path) {
+//   wx.showToast({
+//       icon: "loading",
+//       title: "正在上传"
+//     }),
+
+// }

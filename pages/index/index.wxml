@@ -8,7 +8,7 @@
     <view style="margin-left:2%;margin-right:2%;margin-top:1%">
       <view class="tr">
         <view class="userAvartar">
-          <image class="userinfo-avatar" src="{{item.useravatar}}" background-size="cover" />
+          <image class="userinfo-avatar" src="../../image/testinfo/testavatar/2.jpg" background-size="cover" />
         </view>
         <view class="userInfo">
           <text class="userinfo-nickname">{{item.user_sno}}</text>
