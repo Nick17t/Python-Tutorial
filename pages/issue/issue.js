@@ -113,7 +113,8 @@ Page({
         _this.setData({
           title: "",
           position: "",
-          text: ""
+          text: "",
+          currentWordNumber: 0
         });
       },
       fail: function (res) {
