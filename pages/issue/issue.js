@@ -120,5 +120,19 @@ Page({
         console.log("上传失败");
       }
     })
-  }
+  },
+  checkimg: function () {
+    self = this
+    wx.chooseImage({
+      count: 1,
+      sizeType: ['original', 'compressed'],
+      sourceType: ['album', 'camera'],
+      success: function (res) {
+        var tempFilePaths = res.tempFilePaths
+        self.setData({
+          imglist: tempFilePaths
+        })
+      }
+    })
+  },
 })

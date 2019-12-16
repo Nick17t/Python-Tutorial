@@ -52,6 +52,7 @@ radio-group {
   color: rgb(189, 189, 189);
   left: 76%;
 } */
+
 page {
   background-color: #eee;
   font-size: 35rpx;
@@ -76,7 +77,7 @@ input {
   margin-right: 4%;
 }
 
-radio-group{
+radio-group {
   padding-left: 4%;
   padding-right: 4%;
   background-color: #eee;
@@ -106,4 +107,17 @@ button {
   position: relative;
   color: rgb(189, 189, 189);
   left: 83%;
+}
+
+.uploadPic {
+  width: 20%;
+  margin-right: 20rpx;
+  padding-left: 4%;
+}
+
+.uploadPics {
+  width: 20%;
+  height: 130rpx;
+  margin-right: 20rpx;
+  padding-left: 4%;
 }
