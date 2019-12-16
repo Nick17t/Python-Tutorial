@@ -92,23 +92,23 @@ Page({
   //   })
   // },
 
-  formSubmit: function (e) {
+  formSubmit: function(e) {
     var _this = this;
     wx.request({
       url: 'http://localhost:8080/thelostfound_war_exploded/issue',
       method: 'POST',
-      data:{
-        issueType:e.detail.value.issueType,
-        title:e.detail.value.title,
-        position:e.detail.value.position,
-        text:e.detail.value.text,
+      data: {
+        issueType: e.detail.value.issueType,
+        title: e.detail.value.title,
+        position: e.detail.value.position,
+        text: e.detail.value.text,
         sno: getApp().globalData.sno
       },
       header: {
         //'content-type': 'application/json' // 默认值
         'Content-Type': 'application/x-www-form-urlencoded'
       },
-      success: function (res) {
+      success: function(res) {
         console.log(res.data);
         _this.setData({
           title: "",
@@ -117,23 +117,67 @@ Page({
           currentWordNumber: 0
         });
       },
-      fail: function (res) {
+      fail: function(res) {
         console.log("上传失败");
       }
     })
   },
-  checkimg: function () {
-    self = this
+
+  checkimg: function() {
+    var that = this;
     wx.chooseImage({
       count: 1,
       sizeType: ['original', 'compressed'],
       sourceType: ['album', 'camera'],
-      success: function (res) {
+      success: function(res) {
         var tempFilePaths = res.tempFilePaths
-        self.setData({
-          imglist: tempFilePaths
-        })
+        upload(that, tempFilePaths);
       }
     })
   },
 })
+
+function upload(page, path) {
+  wx.showToast({
+      icon: "loading",
+      title: "正在上传"
+    }),
+    wx.uploadFile({
+      url: constant.SERVER_URL + "/FileUploadServlet",
+      filePath: path[0],
+      name: 'file',
+      header: {
+        "Content-Type": "multipart/form-data"
+      },
+      formData: {
+        //和服务器约定的token, 一般也可以放在header中
+        'session_token': wx.getStorageSync('session_token')
+      },
+      success: function(res) {
+        console.log(res);
+        if (res.statusCode != 200) {
+          wx.showModal({
+            title: '提示',
+            content: '上传失败',
+            showCancel: false
+          })
+          return;
+        }
+        var data = res.data
+        page.setData({ //上传成功修改显示头像
+          src: path[0]
+        })
+      },
+      fail: function(e) {
+        console.log(e);
+        wx.showModal({
+          title: '提示',
+          content: '上传失败',
+          showCancel: false
+        })
+      },
+      complete: function() {
+        wx.hideToast(); //隐藏Toast
+      }
+    })
+}

@@ -18,6 +18,14 @@ Page({
   //     url: '../logs/logs'
   //   })
   // },
+
+  onPullDownRefresh() {
+    // 下拉刷新
+    if (!this.loading) {
+      this.getIssueData()
+    }
+  },
+
   onLoad: function() {
     this.getIssueData();
     // if (app.globalData.userInfo) {

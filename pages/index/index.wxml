@@ -20,7 +20,7 @@
       </view>
       <navigator class="detail" hover-class="none" url="{{item.detailurl}}">
         <view class="photo">
-          <image  mode="widthFix" class="detailphoto" src="{{item.photo-address}}"/>
+          <image  mode="widthFix" class="detailphoto" src="{{item.photo_address}}"/>
         </view>
         <view class="description">
           <view class="description-label-view">
